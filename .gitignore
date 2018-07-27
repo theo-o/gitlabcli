@@ -1,0 +1,7 @@
+build
+dist
+gitlabcli.conf
+
+__pycache__
+__pycache__
+.idea
