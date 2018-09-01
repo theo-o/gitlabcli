@@ -1,0 +1,12 @@
+README.md
+setup.py
+gitlab_cli.egg-info/PKG-INFO
+gitlab_cli.egg-info/SOURCES.txt
+gitlab_cli.egg-info/dependency_links.txt
+gitlab_cli.egg-info/entry_points.txt
+gitlab_cli.egg-info/top_level.txt
+labcli/__init__.py
+labcli/auth.py
+labcli/cli.py
+labcli/parsers.py
+labcli/utils.py

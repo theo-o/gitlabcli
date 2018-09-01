@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gitlab-cli
+Version: 0.1.0
+Summary: A CLI application for the GitLab API
+Home-page: https://github.com/theo-o/gitlab-cli
+Author: Theo Ouzhinski
+Author-email: touzhinski@gmail.com
+License: UNKNOWN
+Description: # gitlab-cli
+        
+        `gitlab-cli` is a tool to manage your Gitlab projects.  It wraps the API of the PyPI package `python-gitlab`.  It includes support for multiple packages.
+        
+        
+        ## License
+        This application is licensed under the GNU General Public License version 3 (or at your option a later version) (GPLv3).
+        
+Keywords: gitlab development VC git
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
