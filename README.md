@@ -4,4 +4,4 @@
 
 
 ## License
-This application is licensed under the GNU General Public License version 3 (or at your option a later version) (GPLv3).
+This application is licensed under the GNU General Public License version 3 (or at your option a later version) (GPLv3+).
