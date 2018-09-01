@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3599680b57df713f7e2cf06899e7d08d5dc4eaf43b9fb59bd36ec4f183cd8e57"
+            "sha256": "75533fed0421b9ae007a113dff72abdf8ac850e42c66b8a2c89382f76f41f59e"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -18,10 +18,10 @@
     "default": {
         "certifi": {
             "hashes": [
-                "sha256:13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7",
-                "sha256:9fa520c1bacfb634fa7af20a76bcbd3d5fb390481724c597da32c719a7dca4b0"
+                "sha256:376690d6f16d32f9d1fe8932551d80b23e9d393a8578c5633a2ed39a64861638",
+                "sha256:456048c7e371c089d0a77a5212fb37a2c2dce1e24146e3b7e0261736aaeaa22a"
             ],
-            "version": "==2018.4.16"
+            "version": "==2018.8.24"
         },
         "chardet": {
             "hashes": [
@@ -39,10 +39,10 @@
         },
         "python-gitlab": {
             "hashes": [
-                "sha256:807ee192d51286f21375f2e5870b2ebaec2af74b4359f5e72646cf49dff6448d"
+                "sha256:20ceb9232f9a412ce6554056a6b5039013d0755261d57b5c8ada7035773de795"
             ],
             "index": "pypi",
-            "version": "==1.5.1"
+            "version": "==1.6.0"
         },
         "pyyaml": {
             "hashes": [
@@ -80,7 +80,7 @@
                 "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
                 "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "markers": "python_version != '3.0.*' and python_version >= '2.6' and python_version != '3.2.*' and python_version != '3.3.*' and python_version != '3.1.*' and python_version < '4'",
+            "markers": "python_version != '3.2.*' and python_version != '3.0.*' and python_version >= '2.6' and python_version != '3.1.*' and python_version != '3.3.*' and python_version < '4'",
             "version": "==1.23"
         }
     },
