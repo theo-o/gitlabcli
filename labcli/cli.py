@@ -26,8 +26,7 @@ Optional Arguments:
             self.version()
             exit(0)
 
-        parser = argparse.ArgumentParser(
-            description=labcli.__description__)
+        parser = argparse.ArgumentParser(description=labcli.__description__)
 
         subparsers = parser.add_subparsers(help="A command", dest="cmd")
 
@@ -51,14 +50,20 @@ Optional Arguments:
             exit(1)
 
     def add_global_args(self, aparser):
-        aparser.add_argument("-c", "--config-file",
-                             help="A configuration file to read",
-                             metavar="<file>",
-                             required=False)
-        aparser.add_argument("-s", "--server",
-                             help="Server to authenticate to",
-                             metavar="<server>",
-                             required=False)
+        aparser.add_argument(
+            "-c",
+            "--config-file",
+            help="A configuration file to read",
+            metavar="<file>",
+            required=False,
+        )
+        aparser.add_argument(
+            "-s",
+            "--server",
+            help="Server to authenticate to",
+            metavar="<server>",
+            required=False,
+        )
 
     def version(self):
         vers = "GitLab CLI version {}".format(labcli.__version__)
@@ -81,6 +86,7 @@ Optional Arguments:
             print(f"Invalid subcommand: {args.subcmd}")
             print(self.CLI_HELP)
             exit(1)
+
 
 def main():
     LabCLI()

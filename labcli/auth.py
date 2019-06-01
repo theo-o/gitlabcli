@@ -3,8 +3,7 @@ from configparser import SafeConfigParser, Error
 from gitlab import Gitlab
 
 HOME_DIR = os.path.expanduser("~")
-FILE_PATHS = ["gitlabcli.conf",
-              os.path.join(HOME_DIR, "gitlabcli.conf")]
+FILE_PATHS = ["gitlabcli.conf", os.path.join(HOME_DIR, "gitlabcli.conf")]
 
 
 class ConfigError(Exception):
@@ -19,8 +18,7 @@ class ConfigDataError(ConfigError):
     pass
 
 
-class ConfigParser():
-
+class ConfigParser:
     def __init__(self, args):
         self.config_path = None
         if args.config_file and os.path.isfile(args.config_file):
@@ -45,10 +43,10 @@ class ConfigParser():
             except Exception:
                 raise ConfigDataError("Cannot get server from config file")
         else:
-            if not self._config.has_section(args.server) and \
-                    args.server != "default":
-                raise ConfigDataError("Configuration file does not have"
-                                      f" section {args.server}")
+            if not self._config.has_section(args.server) and args.server != "default":
+                raise ConfigDataError(
+                    "Configuration file does not have" f" section {args.server}"
+                )
 
         try:
             self.url = self._config.get(self.server, "url")
@@ -92,7 +90,11 @@ class ConfigParser():
             raise ConfigDataError("Invalid per_page")
 
     def auth(self):
-        self.conn = Gitlab(self.url, private_token=self.private_token,
-                           oauth_token=self.oauth_token,
-                           timeout=self.timeout, per_page=self.per_page)
+        self.conn = Gitlab(
+            self.url,
+            private_token=self.private_token,
+            oauth_token=self.oauth_token,
+            timeout=self.timeout,
+            per_page=self.per_page,
+        )
         self.conn.auth()
